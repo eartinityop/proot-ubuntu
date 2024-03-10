@@ -2,7 +2,7 @@
 
 # Install proot 
 apt download proot
-mkdir ~/proot
+mkdir proot
 mkdir ~/bin
 dpkg -x proot*.deb ~/proot
 cd proot/usr/bin
@@ -13,9 +13,9 @@ export PATH="$HOME/bin:$PATH"
 ARCH=$(uname -m)
 
 if [ "$ARCH" = "x86_64" ]; then
-  ARCH_ALT=amd64
+  ARCH_ALT=x86_64
 elif [ "$ARCH" = "aarch64" ]; then
-  ARCH_ALT=arm64
+  ARCH_ALT=x86_64
 else
   printf "Unsupported CPU architecture: ${ARCH}"
   exit 1
