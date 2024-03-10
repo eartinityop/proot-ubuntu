@@ -26,4 +26,4 @@ cd
 mkdir ubuntu
 wget https://github.com/termux/proot-distro/releases/download/v4.8.0/ubuntu-focal-$ARCH_ALT-pd-v4.8.0.tar.xz
 tar -xf ubuntu*.xz -C ubuntu
-proot -r ubuntu/ubuntu* -O /bin/bash
+proot -r ubuntu/ubuntu* -0 /bin/bash
