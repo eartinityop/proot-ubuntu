@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Install proot 
+cd
 apt download proot
 mkdir proot
 mkdir ~/bin
